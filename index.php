@@ -47,7 +47,6 @@
 				<div class='col-md-12' align='center'>
 					<div class='btn-group btn-group-sm'>
 						<a class='btn btn-success' href='https://www.cmw.smcsalud.cu' role='button' data-placement='top'>Web SMC Cmw</a>
-						<a class='btn btn-primary' href='config' role='button' data-placement='top'><i class="fas fa-cog"></i>&nbsp;Configuraci&oacute;n</a>
 					</div>
 					<div align="center" style="color:#666666; font-size:12px">Servicios M&eacute;dicos Cubanos, Sucursal Camag&uuml;ey<div>
 				</div>
