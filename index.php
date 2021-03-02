@@ -39,49 +39,55 @@
 				<div align="center" style="color:#eeeeee; font-size:20px">&nbsp;</div>
 				<!-- Fin de Encabezado -->
 
-				<div align="center" class="fs-4 text-secondary">Selecciona Mes y Año a mostrar</div>
-					
-				<div class="form-row" align="center">
-					<div class="row" align="center">
-						<div class="col-sm"></div>
-						
-						<div class="col-sm-2">
-							<div class="input-group">
-								<select name="cboYear" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" require>
-									<option selected>Choose...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+				<div align="center" class="fs-4 text-secondary">Seleccione Año y Mes a mostrar</div>
+				<div align="center" style="color:#eeeeee; font-size:3px">&nbsp;</div>
+				<form id="frmInicio" name="frmInicio" method="post" action="site/security/validar.php">
+					<div class="form-row" align="center">
+						<div class="row" align="center">
+							<div class="col-sm"></div>
+							<div class="col-sm-2">
+								<div class="input-group">
+									<select name="cboYear" class="form-select" id="cboYear" required>
+										<option disabled value="" selected hidden>Choose...</option>
+										<option value="1">2021</option>
+										<option value="2">2020</option>
+										<option value="3">2019</option>
+									</select>
+								</div>
 							</div>
-    					</div>
-    					<div class="col-sm-2">
-							<div class="input-group">
-								<select name="cboMonth" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon"require>
-									<option selected>Choose...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+							<div class="col-sm-2">
+								<div class="input-group">
+									<select name="cboMonth" class="form-select" id="cboMonth" required>
+										<option disabled value="" selected hidden>Choose...</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="1">Abril</option>
+										<option value="2">Mayo</option>
+										<option value="3">Junio</option>
+										<option value="1">Julio</option>
+										<option value="2">Agosto</option>
+										<option value="3">Septiembre</option>
+										<option value="1">Octubre</option>
+										<option value="2">Noviembre</option>
+										<option value="3">Diciembre</option>
+									</select>
+								</div>
 							</div>
-    					</div>
-						<div class="col-sm"></div>
-  					</div>
+							<div class="col-sm"></div>
+						</div>
 
-					<div align="center" style="color:#eeeeee; font-size:6px">&nbsp;</div>
+						<div align="center" style="color:#eeeeee; font-size:6px">&nbsp;</div>
 
-					<div class="row" align="center">
-						<div class="col-sm"></div>
-						<div class="col-sm-3">
-							<button type='submit' name='guardar' class='btn btn-success btn-block'>Guardar datos captados</button>
-    					</div>
-    					<div class="col-sm"></div>
-  					</div>
-
-
-				</div>
-
-				
+						<div class="row" align="center">
+							<div class="col-sm"></div>
+							<div class="col-sm-4">
+								<button type="submit" name="cboMostrar" class="btn btn-primary w-100">Mostrar</button>
+							</div>
+							<div class="col-sm"></div>
+						</div>
+					</div>
+				</form>
 			</div>
 			<!-- FINISH CONTENT -->
 
